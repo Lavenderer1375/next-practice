@@ -6,7 +6,7 @@ export default async function ProductDetails({
 }: {
   params: { id: number };
 }) {
-  const product = await fetchProductById(params?.id.toString());
+  const product = await fetchProductById(params?.id?.toString());
 
   return (
     <div>
